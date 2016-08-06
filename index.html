@@ -5,8 +5,125 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <div class="container">
+        <div class="header-top">
+          <div class="header-logo">
+            <img src="images/logo.png" width="139" height="56" alt="Nerds">
+          </div>
+          <nav class="header-navigation">
+            <ul>
+              <li>
+                <a href="#">Студия</a>
+              </li>
+              <li>
+                <a href="#">Клиенты</a>
+              </li>
+              <li>
+                <a href="#">Магазин</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="cart">
+            <a href="#">Корзина</a>
+          </div>
+        </div>
+        <div class="header-slider">
+          <div class="slider-controls">
+          </div>
+          <div class="slider-inner">
+            <div class="slider-slides">
+              <h2>Долго, дорого, скурпулезно.</h2>
+              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+              <a class="btn" href="#">Узнать больше</a>
+              <img src="slider-1.jpg" width="338" height="231" alt="Долго, дорого, скурпулезно">
+              <h2>Любите ли вы математику, как любим ее мы?</h2>
+              <p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
+              <a class="btn" href="#">Узнать больше</a>
+              <img src="slider-2.jpg" width="230" height="249" alt="Любите ли вы математику, как любим ее мы?">
+              <h2>Только наркотики, только хардкор!</h2>
+              <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+              <a class="btn" href="#">Узнать больше</a>
+              <img src="slider-3.jpg" width="333" height="319" alt="Только наркотики, только хардкор!">
+            </div>
+          </div>
+        </div>
+      </div>    
+    </header>
+    <main class="conteiner">
+      <section class="features">
+        <div class="features-item">
+          <img src=img/websites.png width="240" height="124" alt="Веб-сайты">
+          <h3 class="feauters-item">Веб-сайты</h3>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a class="feauters-item" href="#">Заказать</a>
+        </div>
+        <div class="features-item">
+          <img src=img/apps.png width="240" height="124" alt="Приложения">
+          <h3 class="feauters-item">Приложения</h3>
+          <p>Покорите топ-10 приложений в AppStrore и Google Play</p>
+          <a class="feauters-item" href="#">Заказать</a>
+        </div>
+        <div class="features-item">
+          <img src=img/presentation.png width="240" height="124" alt="Презентации">
+          <h3 class="feauters-item">Презентации</h3>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="feauters-item" href="#">Заказать</a>
+        </div>
+      </section>
+      <article>
+        <div class="about-us-left">
+          <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+          <p>Выполняем заказы на разработку:</p>
+          <ul class="about-us-left">
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="about-us-right">
+          <div class="main-logo">
+            <img src="images/logo-copy.png" width="187" height="75" alt="Nerds">
+            <p>Since 2004</p>
+          </div>
+          <p>Как мы работаем:</p>
+          <ul class="about-us-right">
+            <li>С самоотдачей 146%</li>
+            <li>Соблюдая сроки на 100%</li>
+            <li>По предоплате 50%</li>
+          </ul>
+        </div>
+        <div class="about-us-bottom">
+          <img src="images/glukhanko.png" width="198" height="37" alt="glukhanko">
+          <img src="images/htmlacademy.png" width="199" height="68" alt="html academy">
+          <img src="images/barbershop.png" width="209" height="86" alt="barbershop">
+        </div>
+      </article>
+    </main>
+    <footer class="page-footer">
+      <img src="images/map.png" width="1200" height="416" alt="карта">
+      <img src="images/point.png" width="231" height="190">
+      <img src="images/logo-copy2.png" width="92" height="37">
+      <div class="container"> 
+        <section class="footer-contacts">
+          <b>NЁRDS DESIGN STUDIO</b>
+             191186, Санкт-Петербург,<br> 
+             ул. Б. Конюшенная, д. 19/8<br>
+             тел. +7 (812) 275-75-75
+          <button class="btn" type="submit">НАПИШИТЕ НАМ</button>
+        </section>
+        <section class="footer-social">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>

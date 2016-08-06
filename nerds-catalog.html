@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <div class="header-top">
+          <div class="header-logo">
+            <img src="images/logo.png" width="139" height="56" alt="Nerds">
+          </div>
+          <nav class="header-navigation">
+            <ul>
+              <li>
+                <a href="#">Студия</a>
+              </li>
+              <li>
+                <a href="#">Клиенты</a>
+              </li>
+              <li>
+                <a href="#">Магазин</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="cart">
+            <a href="#">Корзина</a>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <h1>Добро пожаловать в магазин<br> 
+              готовых макетов</h1>
+        </div>
+    <main class="conteiner">
+      <form action="#" method="get">
+        <section class="filter">
+          <label for="cost"><strong>СТОИМОСТЬ:</strong></label>
+          <input type="range">
+          <label for="period">от<input type="number" min="0" step="500"> до<input type="number" max="15000" step="500"></label>
+          <strong>СЕТКА:</strong>
+            <label>
+              <input type="radio" name="merh" value="adaptive" checked>
+              Адаптивная
+          </label>
+          <label>
+              <input type="radio" name="merh" value="fixed">
+              Фиксированная
+          </label>
+          <label>
+              <input type="radio" name="merh" value="liquid">
+              Резиновая
+           </label>
+          <strong>ОСОБЕННОСТИ:</strong>
+          <input type="checkbox" name="sliders" id="sliders" checked>
+          <label for="sliders">Слайдер</label>
+          <input type="checkbox" name="advantages" id="advantages">
+          <label for="advantages">Блок преимуществ</label>
+          <input type="checkbox" name="news" id="news" checked>
+          <label for="news">Новости</label>
+          <input type="checkbox" name="gallery" id="gallery">
+          <label for="gallery">Галерея</label>
+          <input type="checkbox" name="cart" id="cart">
+          <label for="cart">Корзина</label>
+          <a href="#">Показать</a>
+        </section>
+      </form>
+      <section class="content-catalog">
+        <div class="sorting">СОРТИРОВАТЬ:
+          <ul class="sorting-menu">
+            <li>ПО ЦЕНЕ</li>
+            <li>ПО ТИПУ</li>
+            <li>ПО ФУНКЦИОНАЛУ</li>
+          </ul>
+        </div>
+        <section class="shop">
+          <article class="shop-item">
+            <img src="" width="240" height="240" alt="aviator">
+          </article>
+          <article class="shop-item">
+            <img src="" width="240" height="240" alt="sunset">
+          </article>
+          <article class="shop-item">
+            <img src="" width="240" height="240" alt="forte">
+          </article>
+          <article class="shop-item">
+            <img src="" width="240" height="240" alt="marquee">
+          </article>
+          <article class="shop-item">
+            <img src="" width="239" height="240" alt="avenue">
+          </article>
+          <article class="shop-item">
+            <img src="" width="239" height="240" alt="dovetail">
+          </article>
+        </section>
+        <div class="paginator">
+          <a href="#1">1</a>
+          <a href="#1">2</a>  
+          <a href="#3">3</a>
+          <a href="#next">СЛЕДУЮЩАЯ</a>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <img src="images/map.png" width="1200" height="416" alt="карта">
+      <img src="images/point.png" width="231" height="190">
+      <img src="images/logo-copy2.png" width="92" height="37">
+      <div class="container"> 
+        <section class="footer-contacts">
+          <b>NЁRDS DESIGN STUDIO</b>
+             191186, Санкт-Петербург,<br> 
+             ул. Б. Конюшенная, д. 19/8<br>
+             тел. +7 (812) 275-75-75
+          <button class="btn" type="submit">НАПИШИТЕ НАМ</button>
+        </section>
+        <section class="footer-social">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+      </div>
+    </footer>    
+  </body>
+</html>
