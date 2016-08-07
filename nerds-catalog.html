@@ -7,7 +7,7 @@
   <body>
     <header class="page-header">
       <div class="container">
-        <div class="header-top">
+        <section class="header-top">
           <div class="header-logo">
             <img src="images/logo.png" width="139" height="56" alt="Nerds">
           </div>
@@ -30,42 +30,50 @@
           <div class="cart">
             <a href="#">Корзина</a>
           </div>
-        </div>
+        </section>
+      </div>
         <div class="header-bottom">
           <h1>Добро пожаловать в магазин<br> 
               готовых макетов</h1>
         </div>
+    </header>
     <main class="conteiner">
       <form action="#" method="get">
         <section class="filter">
           <label for="cost"><strong>СТОИМОСТЬ:</strong></label>
-          <input type="range">
-          <label for="period">от<input type="number" min="0" step="500"> до<input type="number" max="15000" step="500"></label>
+            <input type="range">
+          <label for="period">от<input type="number" min="0" step="500"> до<input type="number" max="15000" step="500">
           <strong>СЕТКА:</strong>
+          </label>
             <label>
               <input type="radio" name="merh" value="adaptive" checked>
               Адаптивная
-          </label>
-          <label>
+            </label>
+            <label>
               <input type="radio" name="merh" value="fixed">
               Фиксированная
-          </label>
-          <label>
+            </label>
+            <label>
               <input type="radio" name="merh" value="liquid">
               Резиновая
-           </label>
+            </label>
           <strong>ОСОБЕННОСТИ:</strong>
-          <input type="checkbox" name="sliders" id="sliders" checked>
-          <label for="sliders">Слайдер</label>
-          <input type="checkbox" name="advantages" id="advantages">
-          <label for="advantages">Блок преимуществ</label>
-          <input type="checkbox" name="news" id="news" checked>
-          <label for="news">Новости</label>
-          <input type="checkbox" name="gallery" id="gallery">
-          <label for="gallery">Галерея</label>
-          <input type="checkbox" name="cart" id="cart">
-          <label for="cart">Корзина</label>
-          <a href="#">Показать</a>
+            <input type="checkbox" name="sliders" id="sliders" checked>
+          <label for="sliders">Слайдер
+          </label>
+            <input type="checkbox" name="advantages" id="advantages">
+          <label for="advantages">Блок преимуществ
+          </label>
+            <input type="checkbox" name="news" id="news" checked>
+          <label for="news">Новости
+          </label>
+            <input type="checkbox" name="gallery" id="gallery">
+          <label for="gallery">Галерея
+          </label>
+            <input type="checkbox" name="cart" id="cart">
+          <label for="cart">Корзина
+          </label>
+            <a href="#">Показать</a>
         </section>
       </form>
       <section class="content-catalog">
@@ -125,5 +133,6 @@
         </section>
       </div>
     </footer>    
-  </body>
+      </body>
 </html>
+    
