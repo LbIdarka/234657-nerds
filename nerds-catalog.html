@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
@@ -9,7 +10,7 @@
       <div class="container">
         <section class="header-top">
           <div class="header-logo">
-            <img src="images/logo.png" width="139" height="56" alt="Nerds">
+            <a href="/index"><img src="images/logo.png" width="139" height="56" alt="Nerds"></a>
           </div>
           <nav class="header-navigation">
             <ul>
@@ -37,7 +38,7 @@
         </div>
       </div>
     </header>
-    <main class="conteiner">
+    <main class="container">
       <aside class="filter">
        <form action="#" method="get"> 
           <label for="cost"><p class="filter-title">Стоимость:</p></label>
@@ -53,7 +54,7 @@
                   <input type="radio" id="fixed" name="fixed" value="Фиксированная">
               </li>
               <li><label for="liquid">Резиновая</label>
-              <input type="radio" id="liquid" name="merh" value="Резиновая">
+                  <input type="radio" id="liquid" name="liquid" value="Резиновая">
               </li>
             </ul>
             <p class="filter-title">Особенности:</p>
@@ -87,85 +88,101 @@
         <div class="sorting">
           <span class="sorting-title">Сортировать:</span>
           <ul class="sorting-menu">
-            <li><a href="#">по цене</a></li>
-            <li><a href="#">по типу</a></li>
-            <li><a href="#">по функционалу</a></li>
+            <li>
+            	<a href="#">по цене</a>
+            </li>
+            <li>
+            	<a href="#">по типу</a>
+            </li>
+            <li>
+            	<a href="#">по функционалу</a>
+            </li>
           </ul>
           <ul class="sign">
-            <li class="sign-down"><a href="#"></a></li>
-            <li class="sign-up"><a href="#"></a></li>
+            <li class="sign-down">
+            	<a href="#"></a>
+            </li>
+            <li class="sign-up">
+            	<a href="#"></a>
+            </li>
           </ul>
         </div>
         <section class="catalog">
             <ul class="item">
               <li>
-                <div class="item-header"></div>
-                <span></span><span></span><span></span>
+                <div class="item-header">
+                  <span></span><span></span><span></span>
+                </div>
                 <div class="item-content">
-                  <img src="" width="240" height="240" alt="aviator">
+                  <img src="images/aviator.jpg" width="240" height="240" alt="aviator">
                 </div>
                 <div class="item-info">
-                  <p class="item-info-title">aviator</p>
+                  <p class="item-info-title"><a class="buy" href="#">aviator</a></p>
                   <p class="item-info-text">Одностраничный макет с авторским дизайном</p>
                   <a class="btn" href="#">8000</a>
                 </div>
               </li>  
               <li>
-                <div class="item-header"></div>
+                <div class="item-header">
                 <span></span><span></span><span></span>
+                </div>
                 <div class="item-content">
-                  <img src="" width="240" height="240" alt="sunset">
+                  <img src="images/sunset.jpg" width="240" height="240" alt="sunset">
                 </div>
                 <div class="item-info">
-                  <p class="item-info-title">Sunset</p>
+									<p class="item-info-title"><a class="buy" href="#">Sunset</a></p>
                   <p class="item-info-text">Интернет-магазин с личным кабинетом</p>
                   <a class="btn" href="#">10000</a>
                 </div>
               </li>
               <li>
-                <div class="item-header"></div>
+                <div class="item-header">
                 <span></span><span></span><span></span>
+                </div>
                 <div class="item-content">
-                  <img src="" width="240" height="240" alt="forte">
+                  <img src="images/forte.jpg" width="240" height="240" alt="forte">
                 </div>
                 <div class="item-info">
-                  <p class="item-info-title">Forte</p>
+									<p class="item-info-title"><a class="buy" href="#">Forte</a></p>
                   <p class="item-info-text">Отличный макет для личного блога</p>
                   <a class="btn" href="#">5000</a>
                 </div>
               </li>  
               <li>
-                <div class="item-header"></div>
+                <div class="item-header">
                 <span></span><span></span><span></span>
+                </div>
                 <div class="item-content">
-                  <img src="" width="240" height="240" alt="marquee">
+                  <img src="images/marquee.jpg" width="240" height="240" alt="marquee">
                 </div>
                 <div class="item-info">
-                  <p class="item-info-title">Modern organic thai</p>
+									<p class="item-info-title"><a class="buy" href="#">Modern organic thai</a></p>
                   <p class="item-info-text">Сайт для ресторана быстрого питания</p>
                   <a class="btn" href="#">12000</a>
                 </div>
               </li>  
               <li>
-                <div class="item-header"></div>
+                <div class="item-header">
                 <span></span><span></span><span></span>
+                </div>
                 <div class="item-content">
-                  <img src="" width="239" height="240" alt="avenue">
+                  <img src="images/avenue.jpg" width="239" height="240" alt="avenue">
                 </div>
                 <div class="item-info">
-                  <p class="item-info-title">Avenue</p>
+									<p class="item-info-title"><a class="buy" href="#">Avenue</a></p>
                   <p class="item-info-text">Макет для блога о путешествиях</p>
                   <a class="btn" href="#">8000</a>
                 </div>
               </li>  
               <li>
-                <div class="item-header"></div>
+                <div class="item-header">
                 <span></span><span></span><span></span>
+                </div>
                 <div class="item-content">
-                  <img src="" width="239" height="240" alt="dovetail">
+                  <img src="images/dovetail.jpg" width="239" height="240" alt="dovetail">
                 </div>
                 <div class="item-info">
-                  <p class="item-info-title">Dovetail</p>
+									<p class="item-info-title"><a class="buy" href="#">Dovetail</a></p>
                   <p class="item-info-text">Интернет-магазин с галереей товаров</p>
                   <a class="btn" href="#">14000</a>
                 </div>
@@ -174,23 +191,32 @@
         </section>
         <div class="pagination">
           <ul class="pages">
-            <li><a href="#1">1</a></li>
-            <li><a href="#1">2</a></li>  
-            <li><a href="#3">3</a></li>
-            <li><a href="#next">следующая</a></li>
+            <li>
+            	<a href="#1">1</a>
+            </li>
+            <li>
+            	<a href="#1">2</a>
+            </li>  
+            <li>
+            	<a href="#3">3</a>
+            </li>
+            <li>
+            	<a href="#next">следующая</a>
+            </li>
           </ul>
         </div>
       </section>
     </main>
     <div class="map">
-      <img src="images/map.png" width="1200" height="416" alt="карта">
+      <img src="images/map.jpg" width="1200" height="416" alt="карта">
+      <img src="images/point-map.png" width="231" height="190">
       <div class="wrapper">
-        <div class="conteiner">
+        <div class="container">
           <section class="map-contacts">
             <b>Nerds design studio</b>
              <p class="map-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
              <p class="map-phon">тел. +7 (812) 275-75-75</p>
-              <button type="button">Напишите нам</button>
+              <button type="submit">Напишите нам</button>
           </section>
         </div>
       </div>
@@ -208,5 +234,21 @@
         </section>
       </div>
     </footer>
+    
+    <div class="container-post">
+    	<form action="#" method="post">
+    		<div class="half-width">
+      		<label for="name-post">Ваше имя:</label>
+        	<input type="text" name="name-post" id="name-post" placeholder="представьтесь пожалуйста">
+      	</div>
+      	<div class="half-width">
+        	<label for="email-post">Ваш e-mail:</label>
+        	<input type="text" name="email-post"; id="email-post" placeholder="для отправки ответа"> 
+      	</div>
+        <label class="text-post">Текст письма:</label>
+        <textarea name="text-post" id="text-post"; rows="5"; placeholder="в свободной форме"></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
   </body>
 </html>

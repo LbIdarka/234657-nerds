@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
@@ -31,9 +32,8 @@
             <a href="#">Корзина</a>
           </div>
         </section>
-        <secion class="header-slider">
-          <div class="slider-controls">
-          </div>
+        <section class="header-slider">
+          <div class="slider-controls"></div>
           <div class="slider-inner">
             <div class="slider-slides">
               <h2>Долго, дорого, скурпулезно.</h2>
@@ -50,28 +50,28 @@
               <img src="slider-3.jpg" width="333" height="319" alt="Только наркотики, только хардкор!">
             </div>
           </div>
-        </secion>
+        </section>
       </div>    
     </header>
-    <main class="conteiner">
+    <main class="container">
       <section class="features">
         <article class="features-item">
-          <img src=img/websites.png width="240" height="124" alt="Веб-сайты">
+          <img src=images/web-site.png width="240" height="124" alt="Веб-сайты">
           <p class="features-title">Веб-сайты</p>
-          <p class="text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="features-buttons-red" href="#">Заказать</a>
+          <p class="features-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a class="features-buttons red" href="#">Заказать</a>
         </article>
         <article class="features-item">
-          <img src=img/apps.png width="240" height="124" alt="Приложения">
+          <img src=images/app.png width="240" height="124" alt="Приложения">
           <p class="features-title">Приложения</p>
-          <p class="text">Покорите топ-10 приложений в AppStrore и Google Play</p>
-          <a class="features-buttons-green" href="#">Заказать</a>
+          <p class="features-text">Покорите топ-10 приложений в AppStrore и Google Play</p>
+          <a class="features-buttons green" href="#">Заказать</a>
         </article>
         <article class="features-item">
-          <img src=img/presentation.png width="240" height="124" alt="Презентации">
-          <p class="feauters-title">Презентации</p>
+          <img src=images/presentation.png width="240" height="124" alt="Презентации">
+          <p class="features-title">Презентации</p>
           <p class="features-text">Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="features-buttons-yellow" href="#">Заказать</a>
+          <a class="features-buttons yellow" href="#">Заказать</a>
         </article>
       </section>
       <section class="about-us">
@@ -99,22 +99,26 @@
         </section>
         <section class="portfolio">
           <ul class="portfolio-list">
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+          	<li><a href="#"><img src="images/glukhanko.png" width="198" height="37" 							alt="glukhanko"></a>
+          	</li>
+          	<li><a href="#"><img src="images/htmlacademy.png" width="199" height="68" 						alt="html-academy"></a>
+          	</li>
+            <li><a href="#"><img src="images/borodinski.png" width="209" height="86" 							alt="borodinski"></a>
+            </li>
           </ul>
         </section>
       </section>
     </main>
     <div class="map">
-      <img src="images/map.png" width="1200" height="416" alt="карта">
+      <img src="images/map.jpg" width="1200" height="416" alt="карта">
+      <img src="images/point-map.png" width="231" height="190">
       <div class="wrapper">
-        <div class="conteiner">
+        <div class="container">
           <section class="map-contacts">
             <b>Nerds design studio</b>
-             <p class="map-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-             <p class="map-phon">тел. +7 (812) 275-75-75</p>
-              <button type="button">Напишите нам</button>
+            	<p class="map-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+             	<p class="map-phon">тел. +7 (812) 275-75-75</p>
+            <a class="button" href="#">Напишите нам</a>
           </section>
         </div>
       </div>
@@ -132,5 +136,21 @@
         </section>
       </div>
     </footer>
+    
+    <div class="container-post">
+            <form action="#" method="post">        	
+              <div class="half-width">
+                <label for="name-post">Ваше имя:</label>
+                <input type="text" name="name-post" id="name-post" placeholder="представьтесь пожалуйста">
+              </div>
+              <div class="half-width">
+                <label for="email-post">Ваш e-mail:</label>
+                <input type="text" name="email-post"; id="email-post" placeholder="для отправки ответа"> 
+              </div>
+              <label class="text-post">Текст письма:</label>
+              <textarea name="text-post" id="text-post"; rows="5"; placeholder="в свободной форме"></textarea>
+              <button type="submit">Отправить</button>
+             </form>
+						</div>
   </body>
 </html>
