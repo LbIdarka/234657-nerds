@@ -1,0 +1,23 @@
+body {
+	font-size: 16px;
+	font-family: roboto, serif;
+	line-height: 22px;
+	font-weight: normal;
+	color: #283136;
+}
+
+h1 {
+	font-size: 40px;
+	font-family: roboto, serif;
+	line-height: normal;
+	font-weight: normal;
+	color: #000000;
+}
+
+h2 {
+	font-size: 36px;
+	font-family: roboto, serif;
+	line-height: 36px;
+	font-weight: normal;
+	color: #000000;
+}

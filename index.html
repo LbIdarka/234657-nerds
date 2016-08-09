@@ -2,11 +2,155 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <div class="container">
+        <section class="header-top">
+          <div class="header-logo">
+            <img src="images/logo.png" width="139" height="56" alt="Nerds">
+          </div>
+          <nav class="header-navigation">
+            <ul>
+              <li>
+                <a href="#">Студия</a>
+              </li>
+              <li>
+                <a href="#">Клиенты</a>
+              </li>
+              <li>
+                <a href="#">Магазин</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="cart">
+            <a href="#">Корзина</a>
+          </div>
+        </section>
+        <section class="header-slider">
+          <div class="slider-controls"></div>
+          <div class="slider-inner">
+            <div class="slider-slides">
+              <h2>Долго, дорого, скурпулезно.</h2>
+              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+              <a class="btn" href="#">Узнать больше</a>
+              <img src="slider-1.jpg" width="338" height="231" alt="Долго, дорого, скурпулезно">
+              <h2>Любите ли вы математику, как любим ее мы?</h2>
+              <p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
+              <a class="btn" href="#">Узнать больше</a>
+              <img src="slider-2.jpg" width="230" height="249" alt="Любите ли вы математику, как любим ее мы?">
+              <h2>Только наркотики, только хардкор!</h2>
+              <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+              <a class="btn" href="#">Узнать больше</a>
+              <img src="slider-3.jpg" width="333" height="319" alt="Только наркотики, только хардкор!">
+            </div>
+          </div>
+        </section>
+      </div>    
+    </header>
+    <main class="container">
+      <section class="features">
+        <article class="features-item">
+          <img src=images/web-site.png width="240" height="124" alt="Веб-сайты">
+          <p class="features-title">Веб-сайты</p>
+          <p class="features-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a class="features-buttons red" href="#">Заказать</a>
+        </article>
+        <article class="features-item">
+          <img src=images/app.png width="240" height="124" alt="Приложения">
+          <p class="features-title">Приложения</p>
+          <p class="features-text">Покорите топ-10 приложений в AppStrore и Google Play</p>
+          <a class="features-buttons green" href="#">Заказать</a>
+        </article>
+        <article class="features-item">
+          <img src=images/presentation.png width="240" height="124" alt="Презентации">
+          <p class="features-title">Презентации</p>
+          <p class="features-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="features-buttons yellow" href="#">Заказать</a>
+        </article>
+      </section>
+      <section class="about-us">
+        <section class="about-us-left">
+          <p class="about-us-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+          <p class="about-us-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+          <p class="about-us-subtitle">Выполняем заказы на разработку:</p>
+          <ul class="about-us-list">
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </section>
+        <section class="about-us-right">
+          <div class="middle-logo">
+            <img src="images/logo-copy.png" width="187" height="75" alt="Nerds">
+            <p class="logo-year">Since 2004</p>
+          </div>
+          <p class="about-us-subtitle">Как мы работаем:</p>
+          <ul class="about-us-list">
+            <li>С самоотдачей 146%</li>
+            <li>Соблюдая сроки на 100%</li>
+            <li>По предоплате 50%</li>
+          </ul>
+        </section>
+        <section class="portfolio">
+          <ul class="portfolio-list">
+          	<li><a href="#"><img src="images/glukhanko.png" width="198" height="37" 							alt="glukhanko"></a>
+          	</li>
+          	<li><a href="#"><img src="images/htmlacademy.png" width="199" height="68" 						alt="html-academy"></a>
+          	</li>
+            <li><a href="#"><img src="images/borodinski.png" width="209" height="86" 							alt="borodinski"></a>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </main>
+    <div class="map">
+      <img src="images/map.jpg" width="1200" height="416" alt="карта">
+      <img src="images/point-map.png" width="231" height="190">
+      <div class="wrapper">
+        <div class="container">
+          <section class="map-contacts">
+            <b>Nerds design studio</b>
+            	<p class="map-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+             	<p class="map-phon">тел. +7 (812) 275-75-75</p>
+            <a class="button" href="#">Напишите нам</a>
+          </section>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">    
+      <div class="container"> 
+        <section class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+        <section class="footer-friend">
+          <p class="friend-invite">Давайте дружить, это выгодно!</p>
+          <p class="friend-discount">Скидка 10% для друзей из социальных сетей.</p>
+        </section>
+      </div>
+    </footer>
+    
+    <div class="container-post">
+            <form action="#" method="post">        	
+              <div class="half-width">
+                <label for="name-post">Ваше имя:</label>
+                <input type="text" name="name-post" id="name-post" placeholder="представьтесь пожалуйста">
+              </div>
+              <div class="half-width">
+                <label for="email-post">Ваш e-mail:</label>
+                <input type="text" name="email-post"; id="email-post" placeholder="для отправки ответа"> 
+              </div>
+              <label class="text-post">Текст письма:</label>
+              <textarea name="text-post" id="text-post"; rows="5"; placeholder="в свободной форме"></textarea>
+              <button type="submit">Отправить</button>
+             </form>
+						</div>
   </body>
 </html>
