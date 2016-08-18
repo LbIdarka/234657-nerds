@@ -6,14 +6,14 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header clearfix">
       <div class="container">
         <section class="header-top">
           <div class="header-logo">
-            <img src="images/logo.png" width="139" height="56" alt="Nerds">
+            <img src="img/logo.png" width="139" height="56" alt="Nerds">
           </div>
           <nav class="header-navigation">
-            <ul>
+            <ul class="layout-navigation">
               <li>
                 <a href="#">Студия</a>
               </li>
@@ -40,6 +40,7 @@
               <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
               <a class="btn" href="#">Узнать больше</a>
               <img src="slider-1.jpg" width="338" height="231" alt="Долго, дорого, скурпулезно">
+<!--
               <h2>Любите ли вы математику, как любим ее мы?</h2>
               <p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
               <a class="btn" href="#">Узнать больше</a>
@@ -48,33 +49,34 @@
               <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
               <a class="btn" href="#">Узнать больше</a>
               <img src="slider-3.jpg" width="333" height="319" alt="Только наркотики, только хардкор!">
+-->
             </div>
           </div>
         </section>
       </div>    
     </header>
     <main class="container">
-      <section class="features">
+      <section class="features clearfix">
         <article class="features-item">
-          <img src=images/web-site.png width="240" height="124" alt="Веб-сайты">
+          <img src=img/web-site.png width="240" height="124" alt="Веб-сайты">
           <p class="features-title">Веб-сайты</p>
           <p class="features-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <a class="features-buttons red" href="#">Заказать</a>
         </article>
         <article class="features-item">
-          <img src=images/app.png width="240" height="124" alt="Приложения">
+          <img src=img/app.png width="240" height="124" alt="Приложения">
           <p class="features-title">Приложения</p>
           <p class="features-text">Покорите топ-10 приложений в AppStrore и Google Play</p>
           <a class="features-buttons green" href="#">Заказать</a>
         </article>
         <article class="features-item">
-          <img src=images/presentation.png width="240" height="124" alt="Презентации">
+          <img src=img/presentation.png width="240" height="124" alt="Презентации">
           <p class="features-title">Презентации</p>
           <p class="features-text">Вы даже не подозреваете, насколько вы изумительны!</p>
           <a class="features-buttons yellow" href="#">Заказать</a>
         </article>
       </section>
-      <section class="about-us">
+      <section class="about-us clearfix">
         <section class="about-us-left">
           <p class="about-us-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
           <p class="about-us-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
@@ -87,7 +89,7 @@
         </section>
         <section class="about-us-right">
           <div class="middle-logo">
-            <img src="images/logo-copy.png" width="187" height="75" alt="Nerds">
+            <img src="img/logo-copy.png" width="187" height="75" alt="Nerds">
             <p class="logo-year">Since 2004</p>
           </div>
           <p class="about-us-subtitle">Как мы работаем:</p>
@@ -97,21 +99,21 @@
             <li>По предоплате 50%</li>
           </ul>
         </section>
-        <section class="portfolio">
+        <section class="portfolio clearfix">
           <ul class="portfolio-list">
-          	<li><a href="#"><img src="images/glukhanko.png" width="198" height="37" 							alt="glukhanko"></a>
+          	<li class="layout-left"><a href="#"><img src="img/glukhanko.png" width="198" height="37" alt="glukhanko"></a>
           	</li>
-          	<li><a href="#"><img src="images/htmlacademy.png" width="199" height="68" 						alt="html-academy"></a>
+          	<li class="layout-middle"><a href="#"><img src="img/htmlacademy.png" width="199" height="68" alt="html-academy"></a>
           	</li>
-            <li><a href="#"><img src="images/borodinski.png" width="209" height="86" 							alt="borodinski"></a>
+            <li class="layout-right"><a href="#"><img src="img/borodinski.png" width="209" height="86" alt="borodinski"></a>
             </li>
           </ul>
         </section>
       </section>
     </main>
     <div class="map">
-      <img src="images/map.jpg" width="1200" height="416" alt="карта">
-      <img src="images/point-map.png" width="231" height="190">
+      <img class="layout-map" src="img/map.jpg" width="1200" height="416" alt="карта">
+      <img src="img/point-map.png" width="231" height="190" alt="point">
       <div class="wrapper">
         <div class="container">
           <section class="map-contacts">
@@ -123,7 +125,7 @@
         </div>
       </div>
     </div>
-    <footer class="page-footer">    
+    <footer class="page-footer clearfix">    
       <div class="container"> 
         <section class="footer-social">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
@@ -138,19 +140,19 @@
     </footer>
     
     <div class="container-post">
-            <form action="#" method="post">        	
-              <div class="half-width">
-                <label for="name-post">Ваше имя:</label>
-                <input type="text" name="name-post" id="name-post" placeholder="представьтесь пожалуйста">
-              </div>
-              <div class="half-width">
-                <label for="email-post">Ваш e-mail:</label>
-                <input type="text" name="email-post"; id="email-post" placeholder="для отправки ответа"> 
-              </div>
-              <label class="text-post">Текст письма:</label>
-              <textarea name="text-post" id="text-post"; rows="5"; placeholder="в свободной форме"></textarea>
-              <button type="submit">Отправить</button>
-             </form>
-						</div>
+    	<form action="#" method="post">        	
+        <div class="half-width">
+          <label for="name-post">Ваше имя:</label>
+          <input type="text" name="name-post" id="name-post" placeholder="представьтесь пожалуйста">
+        </div>
+        <div class="half-width">
+          <label for="email-post">Ваш e-mail:</label>
+          <input type="text" name="email-post" id="email-post" placeholder="для отправки ответа"> 
+        </div>
+        <label class="text-post">Текст письма:</label>
+          <textarea name="text-post" id="text-post" rows="5" placeholder="в свободной форме"></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+		</div>
   </body>
 </html>
