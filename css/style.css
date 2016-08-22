@@ -1,13 +1,13 @@
 
 body,
 html {
+	font-family: 'Roboto', 'Arial', sans-serif;
 	font-size: 16px;
-	font-family: roboto, serif;
 	line-height: 22px;
 	font-weight: normal;
 	color: #283136;
-	min-width: 1122px;
-  min-height: 1750px;
+	min-width: 900px;
+	background-color: #ffffff;
   margin: 0;
   padding: 0;
 }
@@ -19,7 +19,10 @@ html {
 }
 
 .page-header {
+	min-height: 440px;
 	margin-bottom: 81px;
+	background-color: #eeeeee;
+	
 }
 
 .container {
@@ -44,13 +47,12 @@ html {
 
 .header-logo {
 	float: left;
-	width: 140px;
 	margin-right: 10px;
 }
 
 .header-navigation {
 	float: left;
-	width: 620px;
+	padding-left: 160px;
   /* Только для оформления сетки */
 /*
   min-height: 90px;
@@ -58,24 +60,101 @@ html {
 */
 }
 
+.layout-navigation {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+}
+
 .layout-navigation li {
 	display: inline-block;
-	list-style: none;
-	margin-right: 50px;
+	vertical-align: top;
+	font-size: 14px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.layout-navigation a {
+	display: block;
+	padding: 28px 50px 0 0;
+	text-decoration: none;
+	color: #000000;
+}
+
+.layout-navigation a:hover,
+.cart a:hover {
+	color: #f87f81;
+}
+
+.layout-navigation a:active,
+.cart a:active {
+	color: #a8a8a8;
+	opacity: 0.4;
 }
 
 .cart {
 	float: right;
-	width: 110px;
+	max-width: 125px;
+	padding: 0;
+	margin: 0;
+	font-size: 0;
 	margin-right: 0;
-	padding-top: 15px;
+	
+}
+
+.cart a {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	padding: 28px 10px 0 30px;
+	text-decoration: none;
+	color: #000000;
+	font-size: 14px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.cart a::before {
+	content: "";
+	position: absolute;
+	top: 28px;
+	left: 0;
+	width: 16px;
+	height: 20px;
+	background: transparent url("../img/sprite.png") no-repeat;
+	background-position: -5px 0px;
+	opacity: 0.3;
+}
+
+.cart a:hover::before {
+	content: "";
+	position: absolute;
+	top: 28px;
+	left: 0;
+	width: 16px;
+	height: 20px;
+	background: transparent url("../img/sprite.png") no-repeat;
+	background-position: -5px -25px;
+}
+
+.cart a:active::before {
+	content: "";
+	position: absolute;
+	top: 28px;
+	left: 0;
+	width: 16px;
+	height: 20px;
+	background: transparent url("../img/sprite.png") no-repeat;
+	background-position: -5px 0px;
+	opacity: 1.5;
 }
 
 
 .header-slider {
 	float: left;
 	width: 880px;
-	margin-bottom: 80px;
+	
 	padding-bottom: 70px;
   /* Только для оформления сетки */
 /*
@@ -88,6 +167,7 @@ html {
 	float: left;
 	width: 880px;
 	margin-bottom: 80px;
+	margin-left: 110px;
 	/* Только для оформления сетки */
 /*
   min-height: 175px;
@@ -103,6 +183,7 @@ html {
 	float: left;
   width: 240px;
 	margin-right: 80px;
+	text-align: left;
   /* Только для оформления сетки */
 /*
   min-height: 300px;
@@ -114,10 +195,91 @@ html {
 	margin-right: 0;
 }
 
+.features-item img {
+	vertical-align: bottom;
+	background-color: #fb565a;
+}
+
+.features-item img:nth-child(2) {
+	background-color: #00ca74;
+}
+
+.features-item img:last-child {
+	background-color: #efc84a;
+}
+
+.features-title {
+	margin: 0;
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	margin-top: 25px;
+	padding-bottom: 18px;
+}
+
+.features-text {
+	margin: 0;
+	padding-bottom: 28px;
+	font-size: 15px;
+	line-height: 22px;
+}
+
+.features-buttons {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	padding: 10px 40px;
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 18px;
+	font-family: 'Roboto', 'Arial', sans-serif;
+	text-transform: uppercase;
+	border: none;
+  outline: none;
+	text-decoration: none;
+}
+
+.features-buttons.red {
+	background-color: #fb565a;
+}
+
+.features-buttons.red:hover {
+	background-color: #d6494d;
+}
+
+.features-buttons.red:active {
+	background-color: #b63538;
+}
+
+.features-buttons.green {
+	background-color: #00ca74;
+}
+
+.features-buttons.green:hover {
+	background-color: #01a25e;
+}
+
+.features-buttons.green:active {
+	background-color: #009053;
+}
+
+.features-buttons.yellow {
+	background-color: #efc84a;
+}
+
+.features-buttons.yellow:hover {
+	background-color: #d6ae2c;
+}
+
+.features-buttons.yellow:active {
+	background-color: #c09b24;
+}
+
 .about-us {
-	padding-top: 60px;
-	padding-bottom: 70px;
-	margin-bottom: 45px;
+	padding-top: 59px;
+	padding-bottom: 74px;
+	border-top: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
 	/* Только для оформления сетки */
 /*
 	background: pink;
@@ -127,7 +289,8 @@ html {
 
 .about-us-left {
 	float: left;
-	width: 620px;
+	width: 572px;
+	
 	/* Только для оформления сетки */
 /*
   min-height: 475px;
@@ -136,9 +299,54 @@ html {
 	
 }
 
+.about-us-title {
+	margin: 0;
+	padding-bottom: 20px;
+	font-size: 36px;
+	line-height: 36px;
+}
+
+.about-us-text {
+	margin: 0;
+	font-size: 16px;
+	line-height: 22px;
+	padding-bottom: 46px;
+}
+
+.about-us-subtitle {
+	margin: 0;
+	padding-bottom: 26px;
+	font-size: 16px;
+	line-height: 22px;
+	text-transform: uppercase;
+}
+
+.about-us-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.about-us-list li {
+	font-size: 16px;
+	line-height: 22px;
+	padding-bottom: 27px;
+	
+}
+
+.about-us-list li:before {
+	content: "";
+	float: left;
+	margin: 9px 10px 0 0;
+	width: 25px;
+	height: 2px;
+	background-color: #fb565a;
+}
+
 .about-us-right {
 	float: right;
-	width: 250px;
+	width: 243px;
+	margin-right: 0;
 	/* Только для оформления сетки */
 /*
   min-height: 475px;
@@ -146,50 +354,104 @@ html {
 */
 }
 
-.portfolio {
-	width: 880px;
-	clear: both;
-	/* Только для оформления сетки */
-/*
-	background: red;
-	min-height: 169px;
-*/
+.about-us-right p {
+	padding-top: 55px;
 }
 
 .portfolio-list {
+	margin-top: 46px;
 	list-style: none;
 	padding-bottom: 35px;
+	border-bottom: 2px solid #eeeeee;
 }
 
-.layout-left {
-	float: left;
-	width: 220px;
-	margin-right: 100px;
-	padding-top: 68px;
-	/* Только для оформления сетки */
-/*	background: green;*/
+.portfolio-list li {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	opacity: 0.2;
 }
 
-.layout-middle {
-	float: left;
-	width: 220px;
-	padding-top: 57px;
-	/* Только для оформления сетки */
-/*	background: green;*/
+.portfolio-list li:nth-child(2) {
+	margin-right: 124px;
+	margin-left: 120px;
 }
 
-.layout-right {
-	float: right;
-	width: 230px;
-	padding-top: 46px;
-	/* Только для оформления сетки */
-/*	background: green;*/
+.portfolio-list li:hover,
+.portfolio-list li:active {
+	opacity: 1.0;
 }
 
 .map {
+/*	position: relative;*/
 	margin-top: 85px;
+	
 	/* Только для оформления сетки */
 /*	min-height: 416px;*/
+}
+
+.layout-map {
+	background-color: #e9e5dc;
+}
+
+.point-map {
+	position: relative;
+	bottom: 320px;
+	right: -950px;
+	width: 225px;
+	height: 190px;
+	padding-right: 34px;
+}
+
+.map-contacts {
+	position: relative;
+	bottom: 548px;
+	right: 17px;
+	padding: 30px 23px 26px;
+	width: 208px;
+	height: 200px;
+	background-color: #ffffff;
+}
+
+.map-contacts b {
+	margin: 0;
+	font-size: 16px;
+	line-height: 30px;
+	text-transform: uppercase;
+	
+}
+
+.map-adress,
+.map-phon {
+	margin: 0;
+	font-size: 16px;
+	line-height: 20px;
+	color: #b8b8b8;
+}
+
+.map-adress {
+	margin-top: 13px;
+}
+
+.map-phon {
+	margin-top: 23px;
+	margin-bottom: 33px;
+}
+
+.button {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	padding: 12px 55px;
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 18px;
+	font-family: 'Roboto', 'Arial', sans-serif;
+	text-transform: uppercase;
+	border: none;
+  outline: none;
+	text-decoration: none;
+	background-color: #fb565a;
 }
 
 .layout-map {
@@ -199,23 +461,76 @@ html {
 }
 
 .page-footer {
-	margin-top: 75px;
-	padding-left: 10px;
-	padding-bottom: 70px;
+	margin-top: 77px;
+	margin-bottom: 74px;
 }
 
 .footer-social {
-	width: 240px;
 	float: left;
-	/* Только для оформления сетки */
+	text-align: center;
+/*	 Только для оформления сетки */
 /*
 	background: red;
 	min-height: 65px;
 */
 }
 
+.footer-social a {
+	margin: 0;
+	margin-right: 30px;
+}
+
+.footer-social a:last-child {
+	margin-right: 0;
+}
+
+.social-btn {
+	display: inline-block;
+	vertical-align: middle;
+	width: 63px;
+	height: 62px;
+	font-size: 0;
+/*	text-decoration: none;*/
+	border-radius: 50px;
+}
+
+.social-btn-vk {
+	background-image: url("../img/icon-vk1.png")
+}
+
+.social-btn-fb {
+	background-image: url("../img/icon-facebook.png");
+}
+
+.social-btn-inst {
+	background-image: url("../img/icon-instagramm.png")
+}
+
+.social-btn-vk:hover {
+	background-image: url("../img/icon-vk-nav.png");
+}
+
+.social-btn-fb:hover {
+	background-image: url("../img/icon-facebook-nav.png");
+}
+
+.social-btn-inst:hover {
+	background-image: url("../img/icon-instagramm-nav.png");
+}
+
+.social-btn-vk:active {
+	background-image: url("../img/vk-push.png");
+}
+
+.social-btn-fb:active {
+	background-image: url("../img/facebook-push.png");
+}
+
+.social-btn-inst:active {
+	background-image: url("../img/instagramm-push.png");
+}
+
 .footer-friend {
-	width: 550px;
 	float: left;
 	margin-left: 70px;
 	padding-left: 10px;
@@ -224,6 +539,20 @@ html {
 	background: red;
 	min-height: 65px;
 */
+}
+
+.friend-invite {
+	margin: 0;
+	font-size: 36px;
+	line-height: 36px;
+}
+
+.friend-discount {
+	margin: 0;
+	padding-top: 9px;
+	font-size: 16px;
+	line-height: 32px;
+	color: #283136;
 }
 
 .filter {
@@ -237,9 +566,20 @@ html {
 */
 }
 
+.filter-choice {
+	margin-top: 47px;
+}
+
+.filter-title {
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
 .filter-list {
 	margin: 0;
 	padding: 0;
+	list-style: none;
 	/* Только для оформления сетки */
 /*
 	background: yellow;
@@ -247,12 +587,59 @@ html {
 */
 }
 
-.layout-filter {
+input[type="checkbox"],
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"] + label {
+	display: block;
+	margin-bottom: 17px;
+	line-height: 20px;
+	padding-left: 36px;
+	position: relative;
+	cursor: pointer;
+/*
 	display: inline-block;
+	vertical-align: top;
 	margin-bottom: 25px;
+*/
 	width: 180px;
 	/* Только для оформления сетки */
 /*	background: pink;*/
+}
+
+input[type="radio"] + label::before {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	color: #283136;
+	border: 3px solid #c1c1c1;
+	border-radius: 50%;
+	position: absolute;
+	top: -3px;
+	left: 0;
+}
+
+input[type="radio"]:checked + label::after {
+	content: "";
+	display: block;
+	width: 4px;
+	height: 4px;
+	color: #283136;
+	border: 3px solid #c1c1c1;
+	border-radius: 50%;
+	background: #c1c1c1;
+	position: absolute;
+	top: 5px;
+	left: 8px;
+}
+
+input[type="radio"] + label:hover::before,
+input[type="radio"]:checked + label:hover::after {
+	color: #000000;
+	border-color: #b5b5b5;
 }
 
 .content-catalog {
@@ -350,7 +737,6 @@ html {
 
 .pagination {
 	margin-top: 80px;
-	width: 300px;
 	/* Только для оформления сетки */
 /*
 	background: yellow;
@@ -377,14 +763,20 @@ html {
 .layout-pages:last-child {
 	min-width: 140px;
 }
-/*
+
 h1 {
+	display: inline-block;
+	vertical-align: middle;
 	font-size: 40px;
-	font-family: roboto, serif;
+	font-family: 'Roboto', 'Arial', sans-serif;
 	line-height: normal;
 	font-weight: normal;
 	color: #000000;
+	max-width: 700px;
+	text-align: center;
+
 }
+
 
 h2 {
 	font-size: 36px;
@@ -392,4 +784,76 @@ h2 {
 	line-height: 36px;
 	font-weight: normal;
 	color: #000000;
-}*/
+}
+
+.sprite {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.sprite--icon-basket {
+  width: 15px;
+  height: 15px;
+  background-position: -5px -5px;
+}
+
+.sprite--icon-basket-red {
+  width: 15px;
+  height: 15px;
+  background-position: -5px -30px;
+}
+
+.sprite--icon-check-off {
+  width: 23px;
+  height: 23px;
+  background-position: -5px -55px;
+}
+
+.sprite--icon-check-on {
+  width: 27px;
+  height: 23px;
+  background-position: -5px -88px;
+}
+
+.sprite--icon-circle {
+  width: 25px;
+  height: 25px;
+  background-position: -5px -121px;
+}
+
+.sprite--icon-circle-dot {
+  width: 25px;
+  height: 25px;
+  background-position: -5px -156px;
+}
+
+.sprite--icon-down-dir {
+  width: 11px;
+  height: 10px;
+  background-position: -5px -191px;
+}
+
+.sprite--icon-facebook {
+  width: 12px;
+  height: 22px;
+  background-position: -5px -211px;
+}
+
+.sprite--icon-instagramm {
+  width: 21px;
+  height: 21px;
+  background-position: -5px -243px;
+}
+
+.sprite--icon-up-dir {
+  width: 11px;
+  height: 10px;
+  background-position: -5px -274px;
+}
+
+.sprite--icon-vk {
+  width: 36px;
+  height: 25px;
+  background-position: -5px -294px;
+}

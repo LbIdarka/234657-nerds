@@ -2,13 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
     <header class="page-header">
-      <div class="container clearfix">
-        <section class="header-top">
+      <div class="container">
+        <section class="header-top clearfix">
           <div class="header-logo">
             <a href="index.html"><img src="img/logo.png" width="139" height="56" alt="Nerds"></a>
           </div>
@@ -47,14 +49,14 @@
           <div class="filter-choice">
             <p class="filter-title">Сетка:</p>
             <ul class="filter-list">
-              <li class="layout-filter"><label for="adaptive">Адаптивная</label>
-                  <input type="radio" id="adaptive" name="adaptive" value="Адаптивная" checked> 
+              <li class="layout-filter"><input type="radio" id="adaptive" name="adaptive" value="Адаптивная" checked> 
+              	<label for="adaptive">Адаптивная</label>
               </li>
-              <li class="layout-filter"><label for="fixed">Фиксированная</label>
-                  <input type="radio" id="fixed" name="fixed" value="Фиксированная">
+              <li class="layout-filter"><input type="radio" id="fixed" name="fixed" value="Фиксированная">
+              	<label for="fixed">Фиксированная</label>
               </li>
-              <li class="layout-filter"><label for="liquid">Резиновая</label>
-                  <input type="radio" id="liquid" name="liquid" value="Резиновая">
+              <li class="layout-filter"><input type="radio" id="liquid" name="liquid" value="Резиновая">
+              	<label for="liquid">Резиновая</label>
               </li>
             </ul>
             <p class="filter-title">Особенности:</p>
@@ -107,7 +109,7 @@
             </li>
           </ul>
         </div>
-        <section class="catalog clearfix">
+        <section class="catalog">
             <ul class="item">
               <li class="layout-item">
                 <div class="item-header">
