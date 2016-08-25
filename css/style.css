@@ -73,7 +73,7 @@ html {
 }
 
 .header-top {
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 	padding-top: 28px;
 }
 
@@ -168,11 +168,115 @@ html {
 }
 
 .header-slider {
-	padding-top: 54px;
+	position: relative;
 }
 
 .header-bottom {
 	text-align: center;
+}
+
+.slider-inner {
+	width: 880px;
+	margin: 0 auto;
+}
+
+.slide {
+	min-height: 310px;
+	background-repeat: no-repeat;
+	background-position: 100% 10px;
+}
+
+.slide-text {
+	width: 500px;
+	padding: 30px 0;
+}
+
+.slide-title {
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 36px;
+}
+
+.slide p {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+	color: #283136;
+}
+
+.slide-btn {
+	display: block;
+	width: 220px;
+	margin-top: 30px;
+	padding: 11px 10px;
+	border-radius: 3px;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 500;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #fb565a;
+}
+
+.slide:first-child {
+	background-image: url("../img/slider-1.png");
+}
+
+.slide:nth-child(2) {
+	background-image: url("../img/slider-2.png");
+}
+
+.slide:last-child {
+	background-image: url("../img/slider-3.png");
+}
+
+.slider input[type="radio"] {
+  display: none;
+}
+
+.slider-controls {
+	position: absolute;
+	width: 200px;
+	bottom: 85px;
+	left: 50%;
+	margin-left: -100px;
+	text-align: center;
+}
+
+.slider-controls label {
+	display: inline-block;
+	vertical-align: top;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	border: 3px solid white;
+	margin: 0 3px;
+	background: #ffffff;
+	cursor: pointer;
+}
+
+.slide {
+	display: none;
+}
+
+#btn-1:checked ~ .slider-inner .slide:nth-child(1) {
+  display: block;
+}
+
+#btn-2:checked ~ .slider-inner .slide:nth-child(2) {
+  display: block;
+}
+
+#btn-3:checked ~ .slider-inner .slide:nth-child(3) {
+  display: block;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background: #c1c1c1;
 }
 
 .features {
@@ -229,13 +333,15 @@ html {
 
 .features-buttons.red:hover,
 .button:hover,
-.btn:hover {
+.btn:hover,
+.slide-btn:hover {
 	background-color: #d6494d;
 }
 
 .features-buttons.red:active,
 .button:active,
-.btn:active {
+.btn:active,
+.slide-btn:active {
 	background-color: #b63538;
 }
 

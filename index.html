@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Нёрдс</title>
@@ -23,7 +23,7 @@
                 <a href="#">Клиенты</a>
               </li>
               <li>
-                <a href="#">Магазин</a>
+                <a href="catalog.html">Магазин</a>
               </li>
               <li>
                 <a href="#">Контакты</a>
@@ -31,28 +31,41 @@
             </ul>
           </nav>
           <div class="cart">
-            <a href="#">Корзина</a>
+            <a href="#"><span class="icon-basket"></span>Корзина</a>
           </div>
         </section>
         <section class="header-slider">
-          <div class="slider-controls"></div>
+         	<input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <input type="radio" id="btn-3" name="toggle">
+          <div class="slider-controls">
+          	<label for="btn-1"></label>
+          	<label for="btn-2"></label>
+          	<label for="btn-3"></label>
+          </div>
           <div class="slider-inner">
-            <div class="slider-slides">
-              <h2>Долго, дорого, скурпулезно.</h2>
-              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-              <a class="btn" href="#">Узнать больше</a>
-              <img src="slider-1.jpg" width="338" height="231" alt="Долго, дорого, скурпулезно">
-<!--
-              <h2>Любите ли вы математику, как любим ее мы?</h2>
-              <p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
-              <a class="btn" href="#">Узнать больше</a>
-              <img src="slider-2.jpg" width="230" height="249" alt="Любите ли вы математику, как любим ее мы?">
-              <h2>Только наркотики, только хардкор!</h2>
-              <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
-              <a class="btn" href="#">Узнать больше</a>
-              <img src="slider-3.jpg" width="333" height="319" alt="Только наркотики, только хардкор!">
--->
-            </div>
+            <div class="slide">
+              <div class="slide-text">
+              	<div class="slide-title">Долго, дорого,<br> скурпулезно.</div>
+              	<p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+              	<a class="slide-btn" href="#">Узнать больше</a>
+              </div>
+						</div>
+            <div class="slide">
+              <div class="slide-text">
+              	<div class="slide-title">Любите ли вы математику,<br> как любим ее мы?</div>
+              	<p>Нашим дизайнерам мы удаляем нейроны, ответственные<br> за креатив, чтобы дать им возможность все просчитать</p>
+              	<a class="slide-btn" href="#">Узнать больше</a>
+						 </div>
+						</div>
+            <div class="slide">
+              <div class="slide-text">
+              	<div class="slide-title">Только наркотики,<br> только хардкор!</div>
+              	<p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+              	<a class="slide-btn" href="#">Узнать больше</a>
+							</div>
+						</div>
+          </div>
           </div>
         </section>
       </div>    
@@ -113,10 +126,8 @@
       </section>
     </main>
     <div class="map">
-      <img class="layout-map" src="img/map.jpg" width="1200" height="416" alt="карта">
+      <div class="container">
       <img class="point-map" src="img/point-map.png" width="231" height="190" alt="point">
-      <div class="wrapper">
-        <div class="container">
           <section class="map-contacts">
             <b>Nerds design studio</b>
             	<p class="map-adress">191186, Санкт-Петербург,<br>
@@ -125,14 +136,13 @@
             <a class="button" href="#">Напишите нам</a>
           </section>
         </div>
-      </div>
     </div>
     <footer class="page-footer clearfix">    
       <div class="container"> 
         <section class="footer-social">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <a class="social-btn" href="#">Вконтакте<span class="icon-vk"></span></a>
+          <a class="social-btn" href="#">Фейсбук<span class="icon-facebook"></span></a>
+          <a class="social-btn" href="#">Инстаграм<span class="icon-instagramm"></span></a>
         </section>
         <section class="footer-friend">
           <p class="friend-invite">Давайте дружить, это выгодно!</p>
