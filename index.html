@@ -35,7 +35,7 @@
           </div>
         </section>
         <section class="header-slider">
-         	<input type="radio" id="btn-1" name="toggle" checked>
+        	<input type="radio" id="btn-1" name="toggle" checked>
           <input type="radio" id="btn-2" name="toggle">
           <input type="radio" id="btn-3" name="toggle">
           <div class="slider-controls">
@@ -151,20 +151,29 @@
       </div>
     </footer>
     
-    <div class="container-post">
-    	<form action="#" method="post">        	
-        <div class="half-width">
-          <label for="name-post">Ваше имя:</label>
-          <input type="text" name="name-post" id="name-post" placeholder="представьтесь пожалуйста">
-        </div>
-        <div class="half-width">
-          <label for="email-post">Ваш e-mail:</label>
-          <input type="text" name="email-post" id="email-post" placeholder="для отправки ответа"> 
-        </div>
-        <label class="text-post">Текст письма:</label>
-          <textarea name="text-post" id="text-post" rows="5" placeholder="в свободной форме"></textarea>
-        <button type="submit">Отправить</button>
-      </form>
-		</div>
+    	<div class="container-post">
+    		<form class="post-form" action="#" method="post">    	
+        	<div class="half-width">
+          	<label for="name-post">Ваше имя:</label>
+          	<input type="text" name="name-post" id="name-post" placeholder="представьтесь, пожалуйста" autofocus>
+        	</div>
+        	<div class="half-width">
+          	<label for="email-post">Ваш e-mail:</label>
+          	<input type="email" name="email-post" id="email-post" placeholder="для отправки ответа"> 
+        	</div> 
+        	<label class="text-post">Текст письма:</label>
+          	<textarea name="text-post" id="text-post" rows="5">в свободной форме</textarea>
+        	<button  class="button" type="submit">Отправить</button>
+      	</form>
+      	<button class="container-post-clouse" type="button" title="Закрыть">Закрыть</button>
+			</div>
+		<script>
+			var link = document.querySelector(".button");
+			
+			link.addEventListener("click", function(event) {
+				event.preventDefault();
+				console.log("Клик по ссылке"); 
+			});
+	</script>
   </body>
 </html>
