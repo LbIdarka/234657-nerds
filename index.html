@@ -66,7 +66,6 @@
 							</div>
 						</div>
           </div>
-          </div>
         </section>
       </div>    
     </header>
@@ -127,7 +126,7 @@
     </main>
     <div class="map">
       <div class="container">
-      <img class="point-map" src="img/point-map.png" width="231" height="190" alt="point">
+         <img class="point-map" src="img/point-map.png" width="231" height="190" alt="point">
           <section class="map-contacts">
             <b>Nerds design studio</b>
             	<p class="map-adress">191186, Санкт-Петербург,<br>
@@ -159,21 +158,18 @@
         	</div>
         	<div class="half-width">
           	<label for="email-post">Ваш e-mail:</label>
-          	<input type="email" name="email-post" id="email-post" placeholder="для отправки ответа"> 
+          	<input type="email" name="email-post" id="email-post" placeholder="для отправки ответа" autofocus> 
         	</div> 
-        	<label class="text-post">Текст письма:</label>
-          	<textarea name="text-post" id="text-post" rows="5">в свободной форме</textarea>
+        	<label for="text-post">Текст письма:</label>
+          	<textarea name="text-post" id="text-post" placeholder="в свободной форме"></textarea>
         	<button  class="button" type="submit">Отправить</button>
       	</form>
-      	<button class="container-post-clouse" type="button" title="Закрыть">Закрыть</button>
+      	<button class="container-post-close" type="button" title="Закрыть">Закрыть</button>
 			</div>
-		<script>
-			var link = document.querySelector(".button");
 			
-			link.addEventListener("click", function(event) {
-				event.preventDefault();
-				console.log("Клик по ссылке"); 
-			});
-	</script>
+			
+		<script src="js/popup.js"></script>
+		
+		
   </body>
 </html>
