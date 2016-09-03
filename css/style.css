@@ -2,8 +2,8 @@
 body,
 html {
 	min-width: 900px;
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 	font-family: 'Roboto', 'Arial', sans-serif;
 	font-size: 16px;
 	line-height: 22px;
@@ -13,31 +13,31 @@ html {
 }
 
 @font-face {
-  font-weight: normal;
-  font-style: normal;
+	font-weight: normal;
+	font-style: normal;
 
-  font-family: "symbols-nerds";
-  src: url("../fonts/symbols-nerds.woff") format("woff"),
-       url("../fonts/symbols-nerds.woff2") format("woff2");
+	font-family: "symbols-nerds";
+	src: url("../fonts/symbols-nerds.woff") format("woff"),
+			 url("../fonts/symbols-nerds.woff2") format("woff2");
 }
 
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
-  display: inline-block;
-  width: 1em;
-  margin-right: 0.2em;
-  margin-left: 0.2em;
+	display: inline-block;
+	width: 1em;
+	margin-right: 0.2em;
+	margin-left: 0.2em;
 
-  font-weight: normal;
-  line-height: 1em;
-  font-family: "symbols-nerds";
-  text-align: center;
-  text-transform: none;
-  text-decoration: inherit;
-  font-style: normal;
-  font-variant: normal;
+	font-weight: normal;
+	line-height: 1em;
+	font-family: "symbols-nerds";
+	text-align: center;
+	text-transform: none;
+	text-decoration: inherit;
+	font-style: normal;
+	font-variant: normal;
 
-  speak: none;
+	speak: none;
 }
 
 .icon-basket::before { content: "\62"; } /* "b" */
@@ -54,9 +54,9 @@ html {
 
 
 .clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .page-header {
@@ -82,22 +82,22 @@ html {
 
 .header-navigation {
 	float: left;
+	width: 458px;
 	padding-left: 172px;
 }
 
 .header-navigation .active {
 	position: relative;
-  background-color: none;
 }
 
 .header-navigation .active::after {
 	content: "";
-  position: absolute;
-	right: 50px;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  background-color: #fb565a;
+	position: absolute;
+	right: 45px;
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	background-color: #fb565a;
 }
 
 .layout-navigation {
@@ -141,7 +141,7 @@ html {
 	margin: 0;
 	font-size: 0;
 	color: #000000;
-	
+
 }
 
 .cart a {
@@ -156,18 +156,18 @@ html {
 	text-transform: uppercase;
 }
 
-.cart span {
+.icon-basket::before {
 	padding-right: 10px;
 	font-size: 16px;
 	color: #a6a6a6;
 }
 
-.cart span:hover {
+.icon-basket:hover::before {
 	opacity: 1.0;
 	color: #fb565a;
 }
 
-.cart span:active {
+.icon-basket:active::before {
 	color: #cbcbcb;
 }
 
@@ -239,7 +239,7 @@ html {
 }
 
 .slider input[type="radio"] {
-  display: none;
+	display: none;
 }
 
 .slider-controls {
@@ -264,21 +264,21 @@ html {
 }
 
 #btn-1:checked ~ .slider-inner .slide:nth-child(1) {
-  display: block;
+	display: block;
 }
 
 #btn-2:checked ~ .slider-inner .slide:nth-child(2) {
-  display: block;
+	display: block;
 }
 
 #btn-3:checked ~ .slider-inner .slide:nth-child(3) {
-  display: block;
+	display: block;
 }
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
-  background: #c1c1c1;
+	background: #c1c1c1;
 }
 
 .features {
@@ -287,7 +287,7 @@ html {
 
 .features-item {
 	float: left;
-  width: 240px;
+	width: 240px;
 	margin-right: 79px;
 	text-align: left;
 	line-height: 0;
@@ -295,7 +295,6 @@ html {
 
 .features-item:last-child {
 	margin-right: 0;
-	margin-left: 
 }
 
 .features-title {
@@ -325,7 +324,7 @@ html {
 	color: #ffffff;
 	border: none;
 	border-radius: 3px;
-  outline: none;
+	outline: none;
 	text-transform: uppercase;
 	text-decoration: none;
 }
@@ -474,31 +473,31 @@ html {
 }
 
 .map {
+	position: relative;
 	min-height: 417px;
 	margin-top: 84px;
-	background: url("../img/map.jpg") no-repeat;
+	background: #e9e5dc url("../img/map%20(2).jpg") no-repeat;
 	background-position: center;
-/*	background-color: #edece4;*/
 }
 
 .map .container {
-	position: relative;
+	position: absolute;
+	top: 0;
+	left: 50;
+	margin-left: -450px;
+
 }
 
-.point-map {
-	position: absolute;
-	top: 50%;
-	right: -4%;
-	margin-top: 112px;
-	width: 225px;
-	height: 190px;
-	padding-right: 41px;
+.map-wrapper {
+	height: 417px;
+	width: 100%;
 }
 
 .map-contacts {
 	position: absolute;
 	top: 50%;
-	left: 1%;
+	left: 103%;
+	z-index: 2;
 	margin-top: 87px;
 	padding: 25px 20px 30px;
 	width: 208px;
@@ -544,7 +543,7 @@ html {
 	font-family: 'Roboto', 'Arial', sans-serif;
 	text-transform: uppercase;
 	border: none;
-  outline: none;
+	outline: none;
 	text-decoration: none;
 	background-color: #fb565a;
 	border-radius: 3px;
@@ -557,6 +556,7 @@ html {
 
 .footer-social {
 	float: left;
+	width: 241px;
 	text-align: center;
 }
 
@@ -565,7 +565,7 @@ html {
 	margin-right: 25px;
 }
 
-.footer-social a:last-child {
+.footer-social a:nth-child(3n) {
 	margin-right: 0;
 }
 
@@ -596,6 +596,7 @@ html {
 
 .footer-friend {
 	float: left;
+	width: 560px;
 	margin-left: 79px;
 }
 
@@ -681,20 +682,20 @@ input[type="radio"] {
 	top: 30px;
 	left: 0;
 	width: 4px;
-  height: 4px;
-  border: 8px solid #fff;
-  background: #ababab;
+	height: 4px;
+	border: 8px solid #fff;
+	background: #ababab;
 	border-radius: 50%;
 	box-shadow: 0 2px 1px 0 #cfcfcf;
 	cursor: pointer;
 }
 
 .range-controls .toggle-min {
-  left: 20px;
+	left: 20px;
 }
 
 .range-controls .toggle-max {
-  left: 160px;
+	left: 160px;
 }
 
 .price-controls {
@@ -807,7 +808,7 @@ input[type="checkbox"]:checked + label::before {
 	font-weight: bold;
 	border: none;
 	border-radius: 3px;
-  outline: none;
+	outline: none;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -949,7 +950,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .layout-item:nth-child(2n) {
-  margin-right: 0;
+	margin-right: 0;
 }
 
 
@@ -961,8 +962,7 @@ input[type="checkbox"]:checked + label::before {
 	border-top-right-radius: 5px;
 }
 
-.item-header:hover {
-	background-color: #797979;
+.layout-item:hover .item-header {
 	opacity: 1.0;
 }
 
@@ -982,6 +982,11 @@ input[type="checkbox"]:checked + label::before {
 
 .layout-item {
 	position: relative;
+}
+
+.item-content img {
+	width: 240px;
+	height: 240px;
 }
 
 .item-info-title a {
@@ -1028,11 +1033,14 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .btn {
+	position: absolute;
 	display: inline-block;
 	vertical-align: middle;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -70px;
 	width: 140px;
 	height: 35px;
-	margin-bottom: 30px;
 	padding-top: 10px;
 	text-align: center;
 	font-size: 18px;
@@ -1042,7 +1050,7 @@ input[type="checkbox"]:checked + label::before {
 	text-transform: uppercase;
 	text-decoration: none;
 	border: none;
-  outline: none;
+	outline: none;
 }
 
 .layout-item:hover .item-info {
@@ -1062,7 +1070,7 @@ input[type="checkbox"]:checked + label::before {
 	font-size: 12px;
 	font-weight: 500;
 	text-align: center;
-  vertical-align: middle;
+	vertical-align: middle;
 	margin-right: 10px;
 	background-color: #f1f1f1;
 	text-decoration: none;
@@ -1095,49 +1103,30 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @keyframes bounce {
-  0%  {
-    transform: translateX(1000px);
-  }
-  70% {
-    transform: translateX(-30px);
-  }
-  90% {
-    transform: translateX(10px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+	0%  {
+		transform: translateX(1000px);
+	}
+	70% {
+		transform: translateX(-30px);
+	}
+	90% {
+		transform: translateX(10px);
+	}
+	100% {
+		transform: translateX(0);
+	}
 }
 
 @keyframes shake {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-10px);
-  }
-  20%, 40%, 60%, 80% {
-    transform: translateX(10px);
-  }
-}
-
-@keyframes close {
-  0%  {
-    transform: translateX(0);
-  }
-  70% {
-    transform: translateX(10px);
-  }
-  90% {
-    transform: translateX(-30px);
-  }
-  100% {
-    transform: translateX(-1000px);
-  }
-}
-
-.post-close {
-	animation: close 0.7s;
+	0%, 100% {
+		transform: translateX(0);
+	}
+	10%, 30%, 50%, 70%, 90% {
+		transform: translateX(-10px);
+	}
+	20%, 40%, 60%, 80% {
+		transform: translateX(10px);
+	}
 }
 
 .container-post {
@@ -1145,6 +1134,7 @@ input[type="checkbox"]:checked + label::before {
 	display: none;
 	bottom: 50%;
 	left: 50%;
+	z-index: 3;
 	margin-left: -335px;
 	margin-bottom: -245px;
 	padding: 55px 90px 48px 80px;
@@ -1159,7 +1149,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .container-post-error {
-  animation: shake 0.6s;
+	animation: shake 0.6s;
 }
 
 .post-form {
