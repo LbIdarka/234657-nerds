@@ -60,7 +60,7 @@ var myPlacemark;
 			zoom: 17
 		}, {
 			searchControlProvider: 'yandex#search'
-		}),
+		});
 		myPlacemark = new ymaps.Placemark([59.93863106417265,30.3230545], {}, {
 			iconLayout: 'default#image',
 			iconImageHref: "img/point-map.png",
