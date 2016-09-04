@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<title>HTML Academy: Нёрдс</title>
+	</head>
+	<body>
+		<header class="page-header">
+			<div class="container">
+				<section class="header-top clearfix">
+					<div class="header-logo">
+						<img src="img/logo.png" width="139" height="56" alt="Nerds">
+					</div>
+					<nav class="header-navigation">
+						<ul class="layout-navigation">
+							<li>
+								<a href="#">Студия</a>
+							</li>
+							<li>
+								<a href="#">Клиенты</a>
+							</li>
+							<li>
+								<a href="catalog.html">Магазин</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="cart">
+						<a class="icon-basket" href="#">Корзина</a>
+					</div>
+				</section>
+				<section class="header-slider">
+					<input type="radio" id="btn-1" name="toggle" checked>
+					<input type="radio" id="btn-2" name="toggle">
+					<input type="radio" id="btn-3" name="toggle">
+					<div class="slider-controls">
+						<label for="btn-1"></label>
+						<label for="btn-2"></label>
+						<label for="btn-3"></label>
+					</div>
+					<div class="slider-inner">
+						<div class="slide">
+							<div class="slide-text">
+								<div class="slide-title">Долго, дорого,<br> скурпулезно.</div>
+								<p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+								<a class="slide-btn" href="#">Узнать больше</a>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide-text">
+								<div class="slide-title">Любите ли вы математику,<br> как любим ее мы?</div>
+								<p>Нашим дизайнерам мы удаляем нейроны, ответственные<br> за креатив, чтобы дать им возможность все просчитать</p>
+								<a class="slide-btn" href="#">Узнать больше</a>
+						 </div>
+						</div>
+						<div class="slide">
+							<div class="slide-text">
+								<div class="slide-title">Только наркотики,<br> только хардкор!</div>
+								<p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+								<a class="slide-btn" href="#">Узнать больше</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</header>
+		<main class="container contacts-wrapper">
+			<div class="container-post">
+				<form class="post-form" action="#" method="post">
+					<div class="half-width">
+						<label for="name-post">Ваше имя:</label>
+						<input type="text" name="name-post" id="name-post" placeholder="представьтесь, пожалуйста">
+					</div>
+					<div class="half-width">
+						<label for="email-post">Ваш e-mail:</label>
+						<input type="email" name="email-post" id="email-post" placeholder="для отправки ответа">
+					</div>
+					<label for="text-post">Текст письма:</label>
+						<textarea name="text-post" id="text-post" placeholder="в свободной форме"></textarea>
+					<button  class="button" type="submit">Отправить</button>
+				</form>
+				<button class="container-post-close" type="button" title="Закрыть">Закрыть</button>
+			</div>
+		</main>
+		<footer class="page-footer clearfix">
+			<div class="container">
+				<section class="footer-social">
+					<a class="social-btn" href="#">Вконтакте<span class="icon-vk"></span></a>
+					<a class="social-btn" href="#">Фейсбук<span class="icon-facebook"></span></a>
+					<a class="social-btn" href="#">Инстаграм<span class="icon-instagramm"></span></a>
+				</section>
+				<section class="footer-friend">
+					<p class="friend-invite">Давайте дружить, это выгодно!</p>
+					<p class="friend-discount">Скидка 10% для друзей из социальных сетей.</p>
+				</section>
+			</div>
+		</footer>
+	</body>
+</html>
