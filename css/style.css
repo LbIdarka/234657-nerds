@@ -483,7 +483,7 @@ html {
 .map .container {
 	position: absolute;
 	top: 0;
-	left: 50;
+	left: 50%;
 	margin-left: -450px;
 
 }
@@ -634,7 +634,6 @@ h1 {
 }
 
 .filter-title {
-	margin: 0;
 	margin: 47px 0 13px;
 	font-size: 18px;
 	line-height: 30px;
